@@ -8,7 +8,7 @@ fn main() {
         .add_plugins((DefaultPlugins, PhysicsPlugins::default()))
         .insert_resource(FixedTime::new_from_secs(1. / 60.))
         .add_systems(Startup, setup)
-        .add_systems(FixedUpdate, update_camera)
+        .add_systems(Update, update_camera)
         .run();
 }
 
